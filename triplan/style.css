@@ -1,0 +1,77 @@
+:root {
+  --echelle: 1px;
+  --red: rgba(255,0,0,0.5);
+  --green: rgba(0,255,0,0.5);
+  --blue: rgba(0,0,255,0.5);
+  --transparent: transparent;
+}
+body{background-color: white;}
+/* body{background-color: gray;} */
+/* body{background-color: black;} */
+
+#pavage{
+  /* margin-top: 2050px;
+  margin-left: 4000px; */
+
+  /* margin-top: 2150px;
+  margin-left: 2500px; */
+
+  margin-top: 550px;
+  margin-left: 800px;
+
+  margin-top: 1950px;
+  margin-left: 2900px;
+
+  display: flex;
+
+  width: 1px;
+  height:1px;
+  background-color: blue;
+  
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+#axe_x{
+  position: absolute;
+  width: 1000px;
+  height:1px;
+  background-color: blue;
+}
+
+#axe_y {
+  position: absolute;
+  width: 1px;
+  height:1000px;
+  background-color: blue;
+}
+
+.atome{
+  position: absolute;
+  width: var(--echelle);
+  height:var(--echelle);
+  font-size: 4em;
+}
+
+/* ==================================== */
+.triangle, .hexagone, .carre{position: absolute;}
+
+.pixel_un{
+  width: var(--echelle);
+  height:var(--echelle);
+  font-size: 4em;
+}
+
+
+/* #dom_ecrire{
+  background-color: 'red';
+} */
+
+.petit_point{
+  position: absolute;
+  width:5px;
+  height:5px;
+  /* border:1px solid black; */
+  background-color: blue;
+  border-radius: 50%;
+}
